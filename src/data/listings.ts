@@ -14,5 +14,4 @@ const STAY_LISTINGS = __stayListing.map((post, index): StayDataType => {
   };
 });
 
-
 export { STAY_LISTINGS };
