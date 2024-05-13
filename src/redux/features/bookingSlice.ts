@@ -1,19 +1,13 @@
-import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
-import axios from "axios";
+import { createSlice } from "@reduxjs/toolkit";
+import bookingData from "../../data/json/__stayListing.json";
 
 export interface CounterState {
-  value: string;
+  value: any;
 }
 
 const initialState: CounterState = {
-  value: "",
+  value: bookingData,
 };
-
-export const fetchUsers = createAsyncThunk("user/fetchUser", () => {
-  return axios
-    .get("https://jsonplaceholder.typicode.com/users")
-    .then((res) => res.data);
-});
 
 export const bookingSlice = createSlice({
   name: "book",
