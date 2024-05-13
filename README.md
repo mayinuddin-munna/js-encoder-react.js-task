@@ -48,6 +48,7 @@ This will generate optimized production-ready assets in the dist directory.
 ### Components and Functionality
 
 #### Represent Directory Tree
+```plaintext
 .
 --src
   |--app
