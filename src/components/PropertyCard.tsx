@@ -1,6 +1,6 @@
 import React, { FC } from "react";
 import GallerySlider from "@/components/GallerySlider";
-import { DEMO_STAY_LISTINGS } from "@/data/listings";
+import { STAY_LISTINGS } from "@/data/listings";
 import StartRating from "@/components/StartRating";
 import BtnLikeIcon from "@/components/BtnLikeIcon";
 import Badge from "@/shared/Badge";
@@ -12,7 +12,7 @@ export interface PropertyCardHProps {
   data?: StayDataType;
 }
 
-const DEMO_DATA = DEMO_STAY_LISTINGS[0];
+const DEMO_DATA = STAY_LISTINGS[0];
 
 const PropertyCardH: FC<PropertyCardHProps> = ({
   className = "",

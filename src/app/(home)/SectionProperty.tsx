@@ -1,9 +1,9 @@
 import React, { FC, ReactNode } from "react";
-import { DEMO_STAY_LISTINGS } from "@/data/listings";
+import { STAY_LISTINGS } from "@/data/listings";
 import { StayDataType } from "@/data/types";
 import PropertyCardH from "@/components/PropertyCard";
 
-const DEMO_DATA: StayDataType[] = DEMO_STAY_LISTINGS.filter((_, i) => i < 6);
+const DEMO_DATA: StayDataType[] = STAY_LISTINGS.filter((_, i) => i < 6);
 
 export interface SectionGridFeaturePropertyProps {
   stayListings?: StayDataType[];

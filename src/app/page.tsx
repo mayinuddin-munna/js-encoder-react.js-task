@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
+import React from "react";
 import { TaxonomyType } from "@/data/types";
 import CardCategory from "@/components/CardCategory";
 import SectionGridFeatureProperty from "./(home)/SectionProperty";
