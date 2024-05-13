@@ -57,7 +57,7 @@ function PageHome() {
 
   return (
     <>
-      {/* <main className="relative overflow-hidden">
+      <main className="relative overflow-hidden">
         <div className="container relative space-y-24 mb-24 lg:space-y-28 lg:mb-28">
           <div className="grid grid-cols-12 gap-6">
             <div className="col-span-12 sm:col-span-6 lg:col-span-4 flex">
@@ -75,9 +75,9 @@ function PageHome() {
             <SectionGridFeatureProperty />
           </div>
         </div>
-      </main> */}
+      </main>
 
-      <div>
+      {/* <div>
         <div>
           <button
             aria-label="Increment value"
@@ -93,7 +93,7 @@ function PageHome() {
             Decrement
           </button>
         </div>
-      </div>
+      </div> */}
     </>
   );
 }

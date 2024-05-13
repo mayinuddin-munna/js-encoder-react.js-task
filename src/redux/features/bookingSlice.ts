@@ -1,31 +1,32 @@
-import { createSlice } from '@reduxjs/toolkit'
-import type { PayloadAction } from '@reduxjs/toolkit'
+import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
+import axios from "axios";
 
 export interface CounterState {
-  value: number
+  value: string;
 }
 
 const initialState: CounterState = {
-  value: 0,
-}
+  value: "",
+};
 
-export const counterSlice = createSlice({
-  name: 'book',
+export const fetchUsers = createAsyncThunk("user/fetchUser", () => {
+  return axios
+    .get("https://jsonplaceholder.typicode.com/users")
+    .then((res) => res.data);
+});
+
+export const bookingSlice = createSlice({
+  name: "book",
   initialState,
-  reducers: {
-    increment: (state) => {
-      state.value += 1
-    },
-    decrement: (state) => {
-      state.value -= 1
-    },
-    incrementByAmount: (state, action: PayloadAction<number>) => {
-      state.value += action.payload
-    },
-  },
-})
+  reducers: {},
+  // extraReducers: (builder) => {
+  //   builder.addCase(fetchUsers.pending, (state) => {
+  //     state.loading = true;
+  //   })
 
-// Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+  // },
+});
 
-export default counterSlice.reducer
+export const {} = bookingSlice.actions;
+
+export default bookingSlice.reducer;

@@ -9,7 +9,7 @@ import type { ListingGalleryImage } from "./utils/types";
 import { useLastViewedPhoto } from "./utils/useLastViewedPhoto";
 import { ArrowSmallLeftIcon } from "@heroicons/react/24/outline";
 import { Dialog, Transition } from "@headlessui/react";
-import LikeSaveBtns from "../LikeSaveBtns";
+
 import { Route } from "next";
 
 const PHOTOS: string[] = [
@@ -143,7 +143,6 @@ const ListingImageGallery: FC<Props> = ({
               >
                 <ArrowSmallLeftIcon className="w-6 h-6" />
               </button>
-              <LikeSaveBtns />
             </div>
 
             <div className="flex min-h-full items-center justify-center sm:p-4 pt-0 text-center">
