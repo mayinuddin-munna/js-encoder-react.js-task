@@ -1,5 +1,5 @@
 ## Booking System
-
+Booking system application
 
 ### Live Site
 You can view a live demo of this project [Live Site]().
@@ -14,8 +14,8 @@ Before you begin, ensure you have the following installed on your machine:
 #### Clone the 
 
 ```bash
-git clone https://github.com/yourusername/registration-form.git
-cd registration-form
+git clone https://github.com/mayinuddin-munna/js-encoder-react.js-task
+cd js-encoder-react.js-task
 ```
 #### Install Dependencies
 
@@ -30,7 +30,7 @@ yarn
 ```bash
 npm run dev
 # or
-yarn dev
+yarn run dev
 
 ```
 
