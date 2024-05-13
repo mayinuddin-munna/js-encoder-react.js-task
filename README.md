@@ -48,7 +48,7 @@ This will generate optimized production-ready assets in the dist directory.
 ### Components and Functionality
 
 #### Represent Directory Tree
-
+.
 --src
   |--app
   |  |--(client-components)
@@ -123,3 +123,4 @@ This will generate optimized production-ready assets in the dist directory.
   |--shared
   |--styles
   |--utils
+```
