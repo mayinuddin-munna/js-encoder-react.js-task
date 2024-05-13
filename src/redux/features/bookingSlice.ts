@@ -19,12 +19,6 @@ export const bookingSlice = createSlice({
   name: "book",
   initialState,
   reducers: {},
-  // extraReducers: (builder) => {
-  //   builder.addCase(fetchUsers.pending, (state) => {
-  //     state.loading = true;
-  //   })
-
-  // },
 });
 
 export const {} = bookingSlice.actions;

@@ -4,10 +4,6 @@ import { TaxonomyType } from "@/data/types";
 import CardCategory from "@/components/CardCategory";
 import SectionGridFeatureProperty from "./(home)/SectionProperty";
 
-import { useSelector, useDispatch } from 'react-redux'
-import { RootState } from "@/redux/store";
-import { decrement, increment } from "@/redux/features/bookingSlice";
-
 const DEMO_CATS: TaxonomyType[] = [
   {
     id: "1",
@@ -52,9 +48,6 @@ const DEMO_CATS: TaxonomyType[] = [
 ];
 
 function PageHome() {
-  const count = useSelector((state: RootState) => state.booking.value);
-  const dispatch = useDispatch();
-
   return (
     <>
       <main className="relative overflow-hidden">
@@ -76,24 +69,6 @@ function PageHome() {
           </div>
         </div>
       </main>
-
-      {/* <div>
-        <div>
-          <button
-            aria-label="Increment value"
-            onClick={() => dispatch(increment())}
-          >
-            Increment
-          </button>
-          <span>{count}</span>
-          <button
-            aria-label="Decrement value"
-            onClick={() => dispatch(decrement())}
-          >
-            Decrement
-          </button>
-        </div>
-      </div> */}
     </>
   );
 }
